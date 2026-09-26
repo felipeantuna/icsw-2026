@@ -16,3 +16,6 @@ Thumbs.db
 # Configuración local y secretos
 .env
 *.local
+
+# Notas locales de avance
+AVANCES.md
