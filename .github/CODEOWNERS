@@ -1,0 +1,13 @@
+# Responsables de revision del repositorio
+
+# Regla general: cualquier cambio del repositorio debe ser revisado por el equipo.
+* @felipeantuna @beltraminojeremias @luchomarche100 @StefanoDellaferrera
+
+# Cambios en documentacion.
+*.md @beltraminojeremias
+
+# Cambios en configuracion de GitHub.
+.github/ @luchomarche100
+
+# Cambios en codigo fuente Java.
+src/ @StefanoDellaferrera @felipeantuna
