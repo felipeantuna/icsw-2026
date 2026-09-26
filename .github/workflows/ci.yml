@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - develop
+
+jobs:
+  validar:
+    name: Validar repositorio
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar codigo
+        uses: actions/checkout@v4
+
+      - name: Configurar Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Validar archivos basicos
+        run: |
+          test -f README.md
+          test -f .gitignore
+          test -f .github/CODEOWNERS
+
+      - name: Ejecutar pruebas con Maven si existe
+        if: hashFiles('pom.xml') != ''
+        run: mvn test
+
+      - name: Ejecutar pruebas con Gradle si existe
+        if: hashFiles('build.gradle', 'build.gradle.kts') != ''
+        run: ./gradlew test
