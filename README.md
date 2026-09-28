@@ -35,7 +35,7 @@ java -cp target/classes ar.edu.icsw.wms.Main
 - `.github/CODEOWNERS`: responsables de revision del repositorio.
 - `.github/workflows/ci.yml`: workflow de integracion continua.
 
-## Release 1.0.0
+## Release 1.0.1
 
 Primera versión liberada del software base de inventario.
 
