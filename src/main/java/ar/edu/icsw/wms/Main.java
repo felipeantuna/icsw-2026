@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         List<Producto> productos = List.of(
                 new Producto("SKU-001", "Mouse inalambrico", 12),
-                new Producto("SKU-002", "Teclado mecanico", 8),
+                new Producto("SKU-002", "Teclado inalambrico", 3),
                 new Producto("SKU-003", "Monitor 24 pulgadas", 5)
         );
 
