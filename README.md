@@ -34,3 +34,17 @@ java -cp target/classes ar.edu.icsw.wms.Main
 - `src/test/java`: pruebas automatizadas.
 - `.github/CODEOWNERS`: responsables de revision del repositorio.
 - `.github/workflows/ci.yml`: workflow de integracion continua.
+
+## Release 1.0.0
+
+Primera versión liberada del software base de inventario.
+
+## Documentación con Git
+
+Git permite documentar la evolución del proyecto mediante commits con mensajes claros, ramas, etiquetas de versión, Pull Requests, issues, releases y el historial de cambios.
+
+El README explica el propósito del proyecto, requisitos, ejecución, pruebas y decisiones relevantes.
+
+## Información requerida en un Pull Request externo
+
+Una persona externa debería indicar el objetivo del cambio, la issue relacionada, los archivos o componentes modificados, las pruebas realizadas, el impacto esperado, los riesgos conocidos y evidencia visual cuando corresponda.GitHub ayuda mediante la descripción del Pull Request, comparación de cambios, comentarios, sugerencias de código, reviewers, checks de CI, historial, issues vinculadas y plantillas de Pull Request.
