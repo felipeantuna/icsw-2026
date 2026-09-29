@@ -10,4 +10,9 @@ public class InventarioService {
                 .mapToInt(Producto::stock)
                 .sum();
     }
+    
+    public boolean hayStock(Producto producto) {
+        return producto.stock() > 0;
+}
+
 }
