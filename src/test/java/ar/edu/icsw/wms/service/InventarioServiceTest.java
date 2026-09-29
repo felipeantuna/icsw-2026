@@ -37,16 +37,4 @@ class InventarioServiceTest {
         
         assertFalse(service.hayStock(producto));
     }
-    @Test
-    void cuentaCorrectamenteLosProductosConStock() {
-        InventarioService service = new InventarioService();
-        List<Producto> productos = List.of(
-                new Producto("SKU-001", "Mouse", 10),  
-                new Producto("SKU-002", "Teclado", 0),   
-                new Producto("SKU-003", "Monitor", 5)    
-        );
-
-        
-        assertEquals(2, service.contarProductosDisponibles(productos));
-    }
 }

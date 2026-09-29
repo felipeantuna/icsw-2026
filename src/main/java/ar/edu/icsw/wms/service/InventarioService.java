@@ -14,10 +14,5 @@ public class InventarioService {
     public boolean hayStock(Producto producto) {
         return producto.stock() > 0;
 }
-    public long contarProductosDisponibles(List<Producto> productos) {
-            return productos.stream()
-                    .filter(this::hayStock) 
-                    .count();
-    }
 
 }
