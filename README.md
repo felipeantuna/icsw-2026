@@ -35,9 +35,9 @@ java -cp target/classes ar.edu.icsw.wms.Main
 - `.github/CODEOWNERS`: responsables de revision del repositorio.
 - `.github/workflows/ci.yml`: workflow de integracion continua.
 
-## Release 1.0.1
+## Release 1.1.0
 
-Primera versión liberada del software base de inventario.
+Versión que incorpora la consulta de disponibilidad de stock. El servicio permite determinar si un producto posee unidades disponibles y cuenta con pruebas automatizadas para los casos con stock y sin stock.
 
 ## Documentación con Git
 
